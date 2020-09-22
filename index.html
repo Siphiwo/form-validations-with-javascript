@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Check Passwords</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="error-container">
+        <p id="pass-error"></p>
+    </div>
+    <form>
+        <h3>Reset Password</h3>
+        <hr>
+        <div class="form-group">
+          <h6>New Password</h6>
+          <span id="show-password">
+            <input type="password" class="form-control" id="password" placeholder="Enter Password">
+            <span id="eye-icon"><i class="fa fa-eye-slash" aria-hidden="true"></i></span>
+          </span>
+          <small id="passwordHelper" class="form-text text-muted">Minimum <b>8 Characters</b> with <b>Special Characters</b> and <b>Numbers</b>.</small>
+        </div>
+        <div class="form-group">
+          <h6>Confirm Password</h6>
+          <input type="password" class="form-control" id="password-confirm" placeholder="Confirm Password" disabled>
+          <small id="passwordConfirmHelper" class="form-text text-muted"></small>
+        </div>
+        <button type="submit" class="btn btn-outline-primary btn-full">Update</button>
+      </form>
+    
+   <script src="password_check.js"></script>
+</body>
+</html>

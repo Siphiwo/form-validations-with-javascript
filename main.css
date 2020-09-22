@@ -1,0 +1,45 @@
+:root {
+    --display-error: -45px;
+}
+
+body {
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+form {
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    background: #fff;
+    border-radius: 3px;
+}
+
+#pass-error {
+    position: relative;
+    z-index: -1;
+    color:#fff;
+    padding: 10px 25px;
+    background-color: #e63948;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: var(--display-error);
+    transition: all ease-in-out 0.5s;
+}
+.input-invalid {
+    border-color:  #e63948;
+    box-shadow: 0 0 6px rgba(230,57,72,0.3);
+}
+.input-valid {
+    border-color:  #0c8d0c;
+    box-shadow: 0 0 6px rgba(12, 141, 12, 0.3);
+}
+#show-password {
+    display: flex;
+}
+#eye-icon {
+    padding: 5px 10px;
+    margin-left: -35px;
+    cursor: pointer;
+}
